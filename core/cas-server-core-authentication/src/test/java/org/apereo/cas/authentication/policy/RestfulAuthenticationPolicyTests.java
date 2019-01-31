@@ -15,6 +15,7 @@ import org.apereo.cas.config.support.CasWebApplicationServiceFactoryConfiguratio
 import lombok.SneakyThrows;
 import lombok.val;
 import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
 import org.mockito.MockitoAnnotations;
@@ -58,6 +59,7 @@ import static org.springframework.test.web.client.response.MockRestResponseCreat
 })
 @DirtiesContext
 @Tag("RestfulApi")
+@Disabled
 public class RestfulAuthenticationPolicyTests {
     private static final String URI = "http://rest.endpoint.com";
 

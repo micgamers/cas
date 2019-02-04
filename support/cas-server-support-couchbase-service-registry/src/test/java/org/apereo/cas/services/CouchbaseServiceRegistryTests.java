@@ -51,12 +51,12 @@ public class CouchbaseServiceRegistryTests extends AbstractServiceRegistryTests 
         @SneakyThrows
         @EventListener
         public void handleCouchbaseSaveEvent(final CouchbaseRegisteredServiceSavedEvent event) {
-            Thread.sleep(100);
+            Thread.sleep(1000);
         }
         @SneakyThrows
         @EventListener
         public void handleCouchbaseDeleteEvent(final CouchbaseRegisteredServiceDeletedEvent event) {
-            Thread.sleep(100);
+            Thread.sleep(1000);
         }
     }
 }

@@ -55,9 +55,9 @@ public abstract class AbstractServiceRegistryTests {
 
     public static Stream<Class<? extends RegisteredService>> getParameters() {
         return Stream.of(
-            RegexRegisteredService.class,
             OAuthRegisteredService.class,
             SamlRegisteredService.class,
+            RegexRegisteredService.class,
             OidcRegisteredService.class,
             WSFederationRegisteredService.class
         );
